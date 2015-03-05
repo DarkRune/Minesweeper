@@ -118,9 +118,9 @@ public class MSButton
     if (marked)
       fill(0);
     else if (clicked && bombs.contains(this)) 
-      fill(255, 0, 0);
+      fill(255);
     else if (clicked)
-      fill(200);
+      fill(51, 102, 126);
     else 
       fill(100);
 

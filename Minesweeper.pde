@@ -31,6 +31,7 @@ public void setBombs()
 
 public void draw ()
 {
+  strokeWeight(1);
   background(0);
   if (isWon())
     displayWinningMessage();
@@ -146,12 +147,12 @@ public class MSButton
     }
     if(label.contains("7") == true)
     {
-    strokeWeight(2);
+    textSize(16);
     fill(255,0,0);
     }
     if(label.contains("8") == true)
     {
-    strokeWeight(3);
+    textSize(20);
     fill(255,0,0);
     }
     text(label, x+width/2, y+height/2);

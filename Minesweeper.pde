@@ -123,36 +123,42 @@ public class MSButton
     rect(x, y, width, height);
     if (label.contains("1") == true)
     {
+      textSize(12);
       fill(0);
     }
     if (label.contains("2") == true)
     {
+          textSize(12);
       fill(0, 125, 0);
     }
     if (label.contains("3") == true)
     {
+          textSize(12);
       fill(0, 125, 125);
     }
     if (label.contains("4") == true)
     {
+          textSize(12);
       fill(0, 0, 255);
     }
     if(label.contains("5") == true)
     {
+          textSize(12);
       fill(125,0,0);
     }
     if(label.contains("6") == true)
     {
+          textSize(12);
       fill(255,0,0);
     }
     if(label.contains("7") == true)
     {
-    textSize(16);
+    textSize(18);
     fill(255,0,0);
     }
     if(label.contains("8") == true)
     {
-    textSize(20);
+    textSize(22);
     fill(255,0,0);
     }
     text(label, x+width/2, y+height/2);

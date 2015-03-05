@@ -9,22 +9,19 @@ void setup ()
 {
   size(600, 600);
   textAlign(CENTER, CENTER);
-
   // make the manager
   Interactive.make( this );
-
   buttons = new MSButton[NUM_ROWS][NUM_COLS];
   for (int row = 0; row < NUM_ROWS; row++) {
     for (int col = 0; col < NUM_COLS; col++) {
       buttons[row][col] = new MSButton(row, col);
     }
   }
-  //declare and initialize buttons
   setBombs();
 }
 public void setBombs()
 {
-  for (int i = 0; i < 140; i++) {
+  for (int i = 0; i < 300; i++) {
     int row = (int)(Math.random()*NUM_ROWS);
     int col = (int)(Math.random()*NUM_COLS);
     if (!bombs.contains(buttons[row][col]))
@@ -52,14 +49,12 @@ public void displayLosingMessage()
 {
   for (int i = 0; i < bombs.size (); i++)
     bombs.get(i).clicked = true;
-  //your code here
 }
 public void displayWinningMessage()
 {
   fill(255, 0, 0);
   textAlign(CENTER, CENTER);
   text("You Won!", 250, 250);
-  //your code here
 }
 
 public class MSButton
@@ -143,7 +138,21 @@ public class MSButton
     }
     if(label.contains("5") == true)
     {
+      fill(125,0,0);
+    }
+    if(label.contains("6") == true)
+    {
       fill(255,0,0);
+    }
+    if(label.contains("7") == true)
+    {
+    strokeWeight(2);
+    fill(255,0,0);
+    }
+    if(label.contains("8") == true)
+    {
+    strokeWeight(3);
+    fill(255,0,0);
     }
     text(label, x+width/2, y+height/2);
   }
